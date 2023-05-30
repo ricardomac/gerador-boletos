@@ -31,9 +31,9 @@ const createBoleto = () => {
 
   return Gerador.boleto.Boleto.novoBoleto()
     .comDatas(Datas.novasDatas()
-      .comVencimento(15, 08, 2018)
-      .comProcessamento(14, 07, 2017)
-      .comDocumento(14, 07, 2017))
+      .comVencimento(30, 05, 2025)
+      .comProcessamento(30, 05, 2023)
+      .comDocumento(30, 05, 2023))
     .comBeneficiario(beneficiario)
     .comPagador(pagador)
     .comBanco(new bancos.Bradesco())

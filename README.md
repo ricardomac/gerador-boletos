@@ -1,4 +1,12 @@
-# Note
+# Note 
+
+[EN]
+This is copy of the library https://github.com/odelijairo/gerador-boletos with some corrects necessary for use my project, don't use!
+
+[BR]
+Esta é cópia da biblioteca https://github.com/odelijairo/gerador-boletos com algumas correções necessárias para uso do meu projeto, não use!
+
+# Note 2
 
 This is a copy of the library https://github.com/gammasoft/brasil that has been abandoned.
 

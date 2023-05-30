@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/odelijairo/gerador-boletos"
+    "url": "https://github.com/ricardomac/gerador-boletos"
   },
   "keywords": [
     "gerar",
@@ -34,7 +34,7 @@
     "cobranca",
     "brasil"
   ],
-  "author": "Jairo Odeli Junior <odelijairo@gmail.com>",
+  "author": "Ricardo Macedo <mace.ads6@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "pdfkit": "0.8.3"
