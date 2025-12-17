@@ -28,6 +28,7 @@ Geração de boletos para bancos:
 - Ailos (Cecred)
 - Itaú
 - Sicoob
+- Sicredi
 - Unicred
 
 ### Install

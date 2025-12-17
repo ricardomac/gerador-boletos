@@ -1,14 +1,14 @@
 const Gerador = require('../index');
 const fs = require('fs');
 
-console.log('run gerar boleto cecred!!');
+console.log('run gerar boleto Itau!!');
 
 const init = () => {
   const boleto = createBoleto();
 
   const dir = '../temp'
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-  const writeStream = fs.createWriteStream('../temp/boleto-cecred.pdf');
+  const writeStream = fs.createWriteStream('../temp/boleto-itau.pdf');
 
   new Gerador.boleto.Gerador(boleto).gerarPDF({
     creditos: '',
@@ -36,11 +36,10 @@ const createBoleto = () => {
       .comDocumento(14, 07, 2017))
     .comBeneficiario(beneficiario)
     .comPagador(pagador)
-    .comBanco(new bancos.Cecred())
+    .comBanco(new bancos.Itau())
     .comValorBoleto(210.15) //Apenas duas casas decimais
     .comNumeroDoDocumento(1001)
     .comEspecieDocumento('DM') //Duplicata de Venda Mercantil
-    .comAceite('A')
     .comInstrucoes(instrucoes);
 }
 
@@ -70,13 +69,14 @@ const createBeneficiario = () => {
     .comNome('Empresa Fictícia LTDA')
     .comRegistroNacional('43576788000191')
     .comNumeroConvenio('123456')
-    .comCarteira('09')
+    .comCarteira('109')
     .comAgencia('0101')
-    .comDigitoAgencia('5')
-    .comCodigoBeneficiario('03264467')
+    // .comDigitoAgencia('5')
+    .comCodigoBeneficiario('32641')
     .comDigitoCodigoBeneficiario('0')
-    .comNossoNumero('00115290000000004') //17 digitos
-    .comDigitoNossoNumero('2')
+    .comNossoNumero('23200123')
+    .comDigitoNossoNumero('4')
+    .comPostoBeneficiario('08')
     .comEndereco(enderecoBeneficiario);
 }
 

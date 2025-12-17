@@ -1,6 +1,6 @@
 {
   "name": "@ricardomac/gerador-boletos",
-  "version": "1.1.4",
+  "version": "1.2.8",
   "description": "Gerador de boletos, utilizando a biblioteca PDFKit",
   "main": "index.js",
   "directories": {
@@ -30,6 +30,7 @@
     "caixa",
     "caixa economica",
     "sicoob",
+    "sicredi",
     "unicred",
     "cobranca",
     "brasil"
